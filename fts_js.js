@@ -1,3 +1,5 @@
+{
+
 function parse_exact_match_words(inp){
     //let exact_match_key= "em" //keep lowercase
     let ei=-1,si; 
@@ -180,7 +182,6 @@ function normalise_inp(inp){
         }
         return(inp);
     }
-
     inp= n5(inp);
     console.log("Step5: converted inp=",inp);
 
@@ -370,7 +371,7 @@ class elem{
             }
         }
 
-        else if(tops.includes("|")){    //overall "and" query or "and->minus" query
+        else if(tops.includes("|")){    //overall "or" query or "or->minus" query
             i= or_pos;
             tquer["bool"]["should"].push(tkids[i].form_query());
             
@@ -461,7 +462,7 @@ function validate_tree(root){
     return(true);
 }
 
-//PATTERN MATCHING:: OR '|' symbol ::
+//PATTERN MATCHING JS:: OR '|' symbol ::
 //Use "\\|" when explicitly specifying a pattern
 //Use "\|" when creating a string variable, & using that variable as pattern
 
@@ -726,3 +727,5 @@ for(let ss of search_strings.slice(19,23)){
 //multi-match empty ES, check es o/p
 //Es parse fail or 0 hits --> then no hits shown on ui? confirm
 //record failure search-strings (in prod)
+
+}
