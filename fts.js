@@ -665,7 +665,8 @@ function get_fts_quer2(){
     document.getElementById("copy2clip_status").innerHTML= "<br> Es query copied to clipboard! <br><br><br>";
 }
 
-let SEARCH_FIELDS= ["description","dataset_id","abstract","tissue","kw_drug","kw_cell_line","summary","disease","organism","kw_gene"];         
+let SEARCH_FIELDS= ["dataset_id","description","summary","overall_design","curated_tissue","curated_drug","curated_cell_line","curated_disease","curated_organism","curated_gene","abstract"] 
+//["description","dataset_id","abstract","tissue","kw_drug","kw_cell_line","summary","disease","organism","kw_gene"];         
 //let SEARCH_FIELDS_EXACT= ["dataset_id","tissue","kw_drug","kw_cell_line","disease","organism","kw_gene"];
 let EXACT_MATCH_KEY="emw"; //keep lowercase
 let EXACT_MATCH_WORDS=[];
